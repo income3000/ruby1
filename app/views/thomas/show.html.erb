@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @thoma.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @thoma.last_name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @thoma.age %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @thoma.url %>
+</p>
+
+<%= link_to 'Edit', edit_thoma_path(@thoma), class:"btn btn-light"%> |
+<%= link_to 'Back', thomas_path , class:"btn btn-light"%>

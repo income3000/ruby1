@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Thomas Clan</h1>
+
+<table class="table table-hover table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Age</th>
+      <th>Url</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @thomas.each do |thoma| %>
+      <tr>
+        <td><%= thoma.first_name %></td>
+        <td><%= thoma.last_name %></td>
+        <td><%= thoma.age %></td>
+        <td><%= thoma.url %></td>
+        <td><%= link_to 'Show', thoma %></td>
+        <td><%= link_to 'Edit', edit_thoma_path(thoma) %></td>
+        <td><%= link_to 'Destroy', thoma, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Thomas', new_thoma_path, class:"btn btn-secondary" %>

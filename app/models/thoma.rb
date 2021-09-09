@@ -1,0 +1,2 @@
+class Thoma < ApplicationRecord
+end
