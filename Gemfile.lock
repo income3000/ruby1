@@ -186,7 +186,7 @@ DEPENDENCIES
   byebug
   jbuilder (~> 2.7)
   listen (~> 3.3)
-  pg
+  pg (~> 1.2, >= 1.2.3)
   pry
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
